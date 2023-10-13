@@ -1,25 +1,25 @@
-# debug-classic-asp
+# debug-classic-asp<br>
 Debugging class written for Classic ASP, logging events and Try/Catch/Release functions
 
-Use: 
-Include the _debug.asp file at the beginning of your Classic ASP page, using: <!-- #include virtual="/folder/_debug.asp" -->
+Use: <br>
+Include the _debug.asp file at the beginning of your Classic ASP page, using: <code><!-- #include virtual="/folder/_debug.asp" --></code>
 
-After the class is included, and at the beginning of your code segment(s), add: 
-  set Debug = new Debugger
-  Debug.Initialise(true)
+After the class is included, and at the beginning of your code segment(s), add: <br>
+  <code>set Debug = new Debugger<br>
+  Debug.Initialise(true)</code>
 
 Use the (true) or (false) to enabled/disable the debug mode.
 
-Available functions: 
-Debug.Logs(m)
+Available functions: <br>
+Debug.Logs(m)<br>
   m = text string to output as a debugging message.
 
-Debug.Var(m,v)
-  m = text string, 
-  v = value (string.)
+Debug.Var(m,v)<br>
+  m = text string,<br> 
+  v = value (string.)<br>
   Useful for outputting the value of a variable.
 
-Debug.Try
+Debug.Try<br>
   Enable trap.
 
 Debug.Catch
