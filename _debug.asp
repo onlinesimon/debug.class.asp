@@ -3,10 +3,10 @@
 '// AUTHOR: Simon Beal
 '// UPDATE: 2021-09-28 / 2016-07-22
 
-'// REQUIRES:	/debug-classic-asp/_debugcss.asp'
-'//		/debug-classic-asp/_debug.css'
+'// REQUIRES:	/debug-classic-asp/_debugcss.asp
+'//		/debug-classic-asp/_debug.css
 
-'// USAGE: '
+'// USAGE: 
 '// 	set Debug = new Debugger
 '// 	Debug.Initialise(true)
 
