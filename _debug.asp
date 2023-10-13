@@ -119,7 +119,7 @@ class Debugger
 
 			if len(msg) > 0 then
 				msg = replace(msg, chr(9), "")
-				characterPosition 	= instr(msg, "= [")
+				characterPosition = instr(msg, "= [")
 			else
 				characterPosition = 0
 			end if
@@ -163,8 +163,8 @@ class Debugger
 		if Mode = true or Override = true then
 
 			Render(	"<blockquote>" & _
-						"<p>Stopped at " & now() & "</p>" & _
-						"</blockquote>")
+				"<p>Stopped at " & now() & "</p>" & _
+				"</blockquote>")
 
 			response.flush
 			response.end
@@ -179,8 +179,8 @@ class Debugger
 			Terminate = true then
 			
 			Render(	"<blockquote>" & _
-					"<p>Stopped at " & now() & "</p>" & _
-					"</blockquote>")
+				"<p>Stopped at " & now() & "</p>" & _
+				"</blockquote>")
 
 			response.flush
 			response.end
@@ -194,8 +194,8 @@ class Debugger
 
 		if Mode = true or Override = true then
 			Render(	"<blockquote>" & _
-					"Stopped at " & now() & ". Would you like to <a href='" & url & "'>Continue</a>? " & _
-					"</blockquote>")
+				"Stopped at " & now() & ". Would you like to <a href='" & url & "'>Continue</a>? " & _
+				"</blockquote>")
 		else
 			response.redirect(url)
 		end if
@@ -244,6 +244,7 @@ class Debugger
 
 		err.clear
 		if Mode = false then 
+			'// CANCEL TRAP
 			on error goto 0
 		end if
 	end sub
