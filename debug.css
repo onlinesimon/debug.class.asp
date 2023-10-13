@@ -1,0 +1,58 @@
+/* DEBUG BOX */
+
+#debugBox {
+	clear: left;
+	display: block;
+	padding: 5px;
+	margin-bottom: 0px;
+	border-bottom: 1px dotted #303030;
+	background-color: #50505a;
+	color: white;
+	font-size: 0.8rem !important;
+	font-weight: 300;
+	font-family: "Lucida Console", Monaco, monospace !important;
+}
+
+#debugBox blockquote {
+	float: none !important;
+	width: auto !important;
+	padding-left: 2rem;	
+	padding-bottom: 0px !important;
+	border-left: 1px solid white;
+	background-color: #50505a;
+	font-size: 0.8rem !important;
+	font-weight: 300;
+}
+
+#debugBox .debugLeft {
+	clear: both;
+	display: inline-block;
+	height: 1rem !important;
+	width: 25%;
+	margin-right: 1rem;
+	font-size: 0.8rem !important;
+	font-weight: 300;
+}
+
+#debugBox .debugRight {
+	display: inline-block;
+	height: 1rem !important;
+	width: auto;
+	font-size: 0.8rem !important;
+	font-weight: 300;
+}
+
+#debugBox span {
+	padding: 0px;
+	margin: 0px;
+	font-size: 0.8rem !important;
+	font-weight: 300;
+}
+
+#debugBox .bg {
+	background-color: #a05050
+}
+
+#debugBox .clr {
+	clear: both;
+}
