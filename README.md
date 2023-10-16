@@ -2,13 +2,13 @@
 Debugging class written for Classic ASP, logging events and Try/Catch/Release functions
 
 Use: <br>
-Include the _debug.asp file at the beginning of your Classic ASP page, using: <code><! -- #include virtual="/folder/_debug.asp" -- ></code>
+Include the _debug.asp file at the beginning of your Classic ASP page, using: <br>
+<code><! -- #include virtual="/folder/_debug.asp" -- ></code>
 
-After the class is included, and at the beginning of your code segment(s), add: <br>
+After the class is included, and at the beginning of your code, add: <br>
 <code>set Debug = new Debugger</code><br>
-<code>Debug.Initialise(true)</code>
-
-Use the (true) or (false) to enabled/disable the debug mode.
+<code>Debug.Initialise(true)</code><br>
+Use <b>true</b> to enable the debug mode, or <b>false</b> to disable debug mode.
 
 Available functions: <br>
 <code>Debug.Logs(m)</code><br>
@@ -37,4 +37,4 @@ Available functions: <br>
   (This is useful for AJAX pages, which automatically want to return or load another page without pausing.)
 
 <code>set Debug = nothing</code><br>
-  Close the class and release memory.
+  Close the class and release memory (at the end of your code.)
