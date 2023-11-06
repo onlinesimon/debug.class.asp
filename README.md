@@ -3,38 +3,59 @@ Debugging class written for Classic ASP, logging events and Try/Catch/Release fu
 
 Use: <br>
 Include the _debug.asp file at the beginning of your Classic ASP page, using: <br>
-<code><! -- #include virtual="/folder/_debug.asp" -- ></code>
+```vbnet
+<! -- #include virtual="/folder/_debug.asp" -- >
+```
 
 After the class is included, and at the beginning of your code, add: <br>
-<code>set Debug = new Debugger</code><br>
-<code>Debug.Initialise(true)</code><br>
+```vbnet
+set Debug = new Debugger
+Debug.Initialise(true)
+```
 Use <b>true</b> to enable the debug mode, or <b>false</b> to disable debug mode.
 
 Available functions: <br>
-<code>Debug.Logs(m)</code><br>
-  m = text string to output as a debugging message.
+```vbnet
+Debug.Logs(m)
+```
+m = text string to output as a debugging message.
 
-<code>Debug.Var(m,v)</code><br>
-  m = text string,<br> 
-  v = value (string.)<br>
-  Useful for outputting the value of a variable.
+```vbnet
+Debug.Var(m,v)
+```
+m = text string,<br> 
+v = value (string.)<br>
+Useful for outputting the value of a variable.
 
-<code>Debug.Try</code><br>
-  Enable trap.
+```vbnet
+Debug.Try
+```
+Enable trap.
 
-<code>Debug.Catch</code><br>
-  Returns: true/false, <br>
-  Test to trap any errors.
+```vbnet
+Debug.Catch
+```
+Returns: true/false, <br>
+Test to trap any errors.
 
-<code>Debug.Release</code><br>
-  Disable trap.
+```vbnet
+Debug.Release
+```
+Disable trap.
 
-<code>Debug.Break</code><br>
-  Stop running the Classic ASP page at this break point.
+```vbnet
+Debug.Break
+```
+Stop running the Classic ASP page at this break point.
 
-<code>Debug.Continue(url)</code><br>
-  If Debug.Mode is true (enabled), then prompt the user if they want to continue, by using the url link. <br>
-  (This is useful for AJAX pages, which automatically want to return or load another page without pausing.)
+```vbnet
+Debug.Continue(url)
+```
+If Debug.Mode is true (enabled), then prompt the user if they want to continue, by using the url link. <br>
+(This is useful for AJAX pages, which automatically want to return or load another page without pausing.)
 
-<code>set Debug = nothing</code><br>
-  Close the class and release memory (at the end of your code.)
+```vbnet
+set Debug = nothing
+```
+Close the class and release memory (at the end of your code.)
+
