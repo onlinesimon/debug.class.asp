@@ -4,7 +4,7 @@ Debugging class written for Classic ASP, logging events and Try/Catch/Release fu
 Use: <br>
 Include the _debug.asp file at the beginning of your Classic ASP page, using: <br>
 ```vbnet
-<!-- #include virtual="/_debug.asp" -->
+<!-- #include virtual="/_debug.class.asp" -->
 ```
 
 After the class is included, and at the beginning of your code, add: <br>
