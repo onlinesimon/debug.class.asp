@@ -1,4 +1,4 @@
-<!-- #include virtual="/debug-classic-asp/_debug.asp" -->
+<!-- #include virtual="/_debug.class.asp" -->
 <%
 
 set Debug = new Debugger
