@@ -1,4 +1,4 @@
-# debug-classic-asp<br>
+# debug.classic.asp<br>
 Debugging class written for Classic ASP, logging events and Try/Catch/Release functions
 
 Use: <br>
